@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "name": "Gujrati Thali",
+      "category": "Thali",
+      "price": 599,
+      "description": "A delightful assortment of traditional Gujarati dishes, offering a perfect blend of sweet, spicy, and tangy flavors.",
+      "image": "https://media.istockphoto.com/id/469160387/photo/gujarati-thali.jpg?s=612x612&w=0&k=20&c=0OdpRueSvOZXcrziOk0AD7AGyckpwp9IjcS6EUQ5Qdc="
+    },
+    {
+      "id": 2,
+      "name": "Panjabi Thali",
+      "category": "Thali",
+      "price": 800,
+      "description": " A hearty meal packed with rich, creamy curries and freshly made bread, representing the bold flavors of Punjab.",
+      "image": "https://img.freepik.com/free-photo/delicious-food-table_23-2150857812.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725408000&semt=ais_hybrid"
+    },
+    {
+      "id": 3,
+      "name": "South Indian Thali",
+      "category": "Thali",
+      "price": 600,
+      "description": "A complete South Indian meal with rice, sambar, rasam, and various spicy and tangy accompaniments.",
+      "image": "https://t3.ftcdn.net/jpg/06/50/60/46/360_F_650604677_lQDktDtlSu3jQTlctUpKPTcKahdrw0am.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Bahubali thali",
+      "category": "Thali",
+      "price": 1500,
+      "description": "A massive feast with an extravagant selection of dishes, perfect for those with a big appetite.",
+      "image": "https://images.slurrp.com/prod/articles/dsfd5863xwq.webp"
+    }
+]

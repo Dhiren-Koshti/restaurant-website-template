@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Restaurant - Thali</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html" id="home">Home</a>
+        <a href="#abouts" id="about">About Us</a>
+        <a href="offer.html" id="offer">Offers</a>
+        <a href="thalis.html" id="thali">Thalis</a>
+        <a href="Cart.html" id="cart" class="cart-link">
+            <img src="https://cdn-icons-png.freepik.com/256/405/405996.png?semt=ais_hybrid" alt="Cart Icon" class="cart-icon">
+            <span id="cart-count" style="display: none;"></span>
+        </a>
+    </div>
+
+    <!-- Main Section -->
+    <section class="menu-card">
+        <h1>Thalis</h1>
+        <div class="menu-content">
+            <div class="menu-items thalis">
+                <!-- Thalis items will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+
+    <template id="foodTemplate">
+        <div class="menu-item" id="" data-category="">
+            <img src="">
+            <div class="item-details">
+                <h2 class="name"></h2>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="description"></p>
+                <p class="price"></p>
+                <div class="quantity">
+                    <button class="quantity-decrement">-</button>
+                    <span class="quantity-value">1</span>
+                    <button class="quantity-increment">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Footer -->
+    <footer class="main-footer" id="abouts">
+        <div class="footer-container">
+            <!-- About Us Section -->
+            <div class="footer-about">
+                <h2>About Us</h2>
+                <p>Welcome to our Restaurant, where passion meets flavor. We pride ourselves on serving delicious, high-quality meals made with the freshest ingredients. Our story began with a dream to create a dining experience that’s unforgettable, offering not just food, but a sense of belonging and community.</p>
+                <a href="about.html" class="learn-more-btn">Learn More</a>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Information -->
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Flavor Town, FT 56789</p>
+                <p><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> contact@restaurant.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script type="module" src="../js/thalis.js"></script>
+</body>
+</html>

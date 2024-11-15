@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" id="home">Home</a>
+        <a href="#abouts" id="about">About Us</a>
+        <a href="offer.html" id="offer">Offers</a>
+        <a href="thalis.html" id="thali">Thalis</a>
+        <a href="Cart.html" id="cart" class="cart-link">
+            <img src="https://cdn-icons-png.freepik.com/256/405/405996.png?semt=ais_hybrid" alt="Cart Icon" class="cart-icon">
+            <span id="cart-count" style="display: none;"></span>
+        </a>
+    </div>
+
+    <div class="middle-section">
+        <div class="content-overlay">
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Arey Dikara, Khava Nu Pivanu Majaa Ni Life</p>
+        </div>
+    </div>
+
+    <section class="offers" id="offers">
+        <h1>Today's Offers</h1>
+        <div class="offers-container">
+            <div class="offer">
+                <img src="https://www.shutterstock.com/image-photo/burger-tomateoes-lettuce-pickles-on-600nw-2309539129.jpg" alt="Delicious burger with pickles, lettuce, and tomatoes">
+                <div class="offer-details">
+                    <h2>30% off On Burgers</h2>
+                    <p>Enjoy a delicious burger with a 30% discount today!</p>
+                </div>
+            </div>
+            <div class="offer">
+                <img src="https://cdn.pixabay.com/photo/2024/04/18/10/41/ai-generated-8704060_640.jpg" alt="Freshly baked pizza with various toppings">
+                <div class="offer-details">
+                    <h2>5% off On Pizza</h2>
+                    <p>Get your favorite pizza at 30% off. Limited time offer!</p>
+                </div>
+            </div>
+            <div class="offer">
+                <img src="https://www.foodandwine.com/thmb/V1OEgtLQGUv_w2Fvm40WMLsJ4rk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Indulgent-Hot-Chocolate-FT-RECIPE0223-fd36942ef266417ab40440374fc76a15.jpg" alt="Rich hot chocolate in a cup">
+                <div class="offer-details">
+                    <h2>10% off On Hot Chocolate</h2>
+                    <p>Warm up with a 10% discount on our rich hot chocolate!</p>
+                </div>
+            </div>
+            <div class="offer">
+                <img src="https://img.freepik.com/premium-photo/two-sandwiches-made-slice-meat-cheese-tomatoes-toasted-bread-wooden-table_244366-394.jpg" alt="Sandwiches with meat, cheese, and tomatoes">
+                <div class="offer-details">
+                    <h2>20% off On Sandwiches</h2>
+                    <p>Enjoy a 15% discount on our delicious sandwiches!</p>
+                </div>
+            </div>
+            <div class="offer">
+                <img src="https://img.freepik.com/free-photo/fried-chicken-french-fries-black-cement-floor_1150-28542.jpg?size=626&ext=jpg&ga=GA1.1.835182344.1725337329&semt=ais_hybrid" alt="Fried chicken with French fries">
+                <div class="offer-details">
+                    <h2>18% off On Fried Chicken</h2>
+                    <p>Get a 15% discount on our crispy fried chicken!</p>
+                </div>
+            </div>
+            <div class="offer">
+                <img src="https://images.pexels.com/photos/2819088/pexels-photo-2819088.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Ice cream with various toppings">
+                <div class="offer-details">
+                    <h2>15% off On Ice Cream</h2>
+                    <p>Cool down with a 15% discount on our delightful ice cream!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="menu-card">
+        <h1>Menu Card</h1>
+        <div class="menu-tabs">
+            <button class="tab-button active" data-category="fast-food" id="fast-food">Fast Food</button>
+            <button class="tab-button" data-category="thalis" id="thalis">Thalis</button>
+        </div>
+        <div class="menu-content">
+            <div class="menu-items fast-food">
+                <!-- Fast food items will be inserted here -->
+            </div>
+            <div class="menu-items thalis">
+                <!-- Thalis items will be inserted here -->
+               
+            </div>
+        </div>
+    </section>
+
+    <template id="foodTemplate">
+        <div class="menu-item" id="" data-category="">
+            <img src="">
+            <div class="item-details">
+                <h2 class="name"></h2>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="description"></p>
+                <p class="price"></p>
+                <div class="quantity">
+                    <button class="quantity-decrement">-</button>
+                    <span class="quantity-value">1</span>
+                    <button class="quantity-increment">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </template>
+    
+    <footer class="main-footer" id="abouts">
+        <div class="footer-container">
+            <!-- About Us Section -->
+            <div class="footer-about">
+                <h2>About Us</h2>
+                <p>Welcome to Our Restaurant, where passion meets flavor. We pride ourselves on serving delicious, high-quality meals made with the freshest ingredients. Our story began with a dream to create a dining experience that’s unforgettable, offering not just food, but a sense of belonging and community.</p>
+                <a href="about.html" class="learn-more-btn">Learn More</a>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Information -->
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Flavor Town, FT 56789</p>
+                <p><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> contact@restaurant.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 . All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>

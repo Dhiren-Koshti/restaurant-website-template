@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Panner Tikka",
+      "category": "Fast Food",
+      "price": 399,
+      "description": "Spicy and grilled paneer skewers marinated in a blend of spices.",
+      "image": "https://media.istockphoto.com/id/1186759790/photo/paneer-tikka-at-skewers-in-black-bowl-at-dark-slate-background-paneer-tikka-is-an-indian.jpg?s=612x612&w=0&k=20&c=cITToqM1KEnrixXjoLhEciqP24SxdKtW3QXykq-W5OE="
+    },
+    {
+      "id": 2,
+      "name": "Vadapav",  
+      "category": "Fast Food",
+      "price": 50,
+      "description": "Spicy potato patty in a soft bun with tangy chutneys.",
+      "image": "https://farm8.staticflickr.com/7378/16200176677_735f0c7dac_z.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Chole bhature",
+      "category": "Fast Food",
+      "price": 100,
+      "description": "Spicy chickpea curry served with soft, fluffy fried bread.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZdyvHhc-DKFkr-KcVUo2vzj1zKOPg7B8GA&s"
+    },
+    {
+      "id": 4,
+      "name": "Pizza",
+      "category": "Fast Food",
+      "price": 400,
+      "description": "Crispy crust pizza topped with veggies, sauce, and melted mozzarella.",
+      "image": "https://cdn.pixabay.com/photo/2024/04/18/10/41/ai-generated-8704060_640.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Sandwich",
+      "category": "Fast Food",
+      "price": 200,
+      "description": "Toasted bread with fresh veggies, cheese, and savory fillings.",
+      "image": "https://img.freepik.com/premium-photo/two-sandwiches-made-slice-meat-cheese-tomatoes-toasted-bread-wooden-table_244366-394.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Panipuri",
+      "category": "Fast Food",
+      "price": 30,
+      "description": "Crisp puris filled with spicy water, mashed potatoes, and chickpeas.",
+      "image": "https://images.pexels.com/photos/12318206/pexels-photo-12318206.jpeg?auto=compress&cs=tinysrgb&w=400"
+    }
+]

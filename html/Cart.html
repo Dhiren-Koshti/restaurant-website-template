@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Restaurant - Cart</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="index.html" id="home">Home</a>
+      <a href="#abouts" id="about">About Us</a>
+      <a href="offer.html" id="offer">Offers</a>
+      <a href="thalis.html" id="thali">Thalis</a>
+      <a href="Cart.html" id="cart" class="cart-link">
+          <img src="https://cdn-icons-png.freepik.com/256/405/405996.png?semt=ais_hybrid" alt="Cart Icon" class="cart-icon">
+          <span id="cart-count" style="display: none;"></span>
+      </a>
+    </div>
+
+    <!-- Cart Section -->
+    <section class="addToCartElement">
+        <div class="container">
+          <section>
+            <div id="productCartContainer">
+               
+            </div>
+          </section>
+  
+          <section class="productCartTotalElem">
+            <div class="productCartTotalElement">
+              <p>Selected Offer Summary</p>
+              <div class="productOrderTotal">
+                <div>
+                  <p>Sub Total:</p>
+                  <p class="productSubTotal">0</p>
+                </div>
+                <div>
+                  <p>Tax:</p>
+                  <p class="productTax">₹50</p>
+                </div>
+                <hr />
+                <div>
+                  <p>Final Total:</p>
+                  <p class="productFinalTotal">0</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <template id="productCartTemplate">
+        <div class="cards" id="cardValue" >
+          <article class="information [ card ]">
+            <div>
+              <span class="category"></span>
+            </div>
+            <div class="imageContainer">
+              <img class="productImage" src="" alt="" />
+            </div>
+  
+            <h2 class="productName"></h2>
+  
+            <p class="productPrice"></p>
+  
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity" ></p>
+              <button class="cartDecrement">-</button>
+            </div>
+  
+            <button class="remove-to-cart-button">
+              Remove
+            </button>
+          </article>
+        </div>
+      </template>
+
+    <!-- Footer -->
+    <footer class="main-footer" id="abouts">
+        <div class="footer-container">
+            <!-- About Us Section -->
+            <div class="footer-about">
+                <h2>About Us</h2>
+                <p>Welcome to our Restaurant, where passion meets flavor. We pride ourselves on serving delicious, high-quality meals made with the freshest ingredients. Our story began with a dream to create a dining experience that’s unforgettable, offering not just food, but a sense of belonging and community.</p>
+                <a href="about.html" class="learn-more-btn">Learn More</a>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Information -->
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Flavor Town, FT 56789</p>
+                <p><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> contact@restaurant.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/cart.js"></script>
+</body>
+</html>
