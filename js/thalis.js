@@ -3,12 +3,15 @@ let thaliContainer = document.querySelector(".thalis");
 function displayCart(){
     let data = JSON.parse(localStorage.getItem("foodLS"));
     let count = document.querySelector("#cart-count");
-    let num = data.length;
-    if(num){
-        count.innerText = num;
-        count.style.display = "block";
-    }else{
-        count.style.display = "none";
+
+    if(data){
+        let num = data.length;
+        if(num){
+            count.innerText = num;
+            count.style.display = "block";
+        }else{
+            count.style.display = "none";
+        }
     }
 }
 
@@ -18,6 +21,7 @@ function addLSData(data){
    
     if(!(localStorage.getItem("foodLS"))){
         localStorage.setItem("foodLS",JSON.stringify([data]));
+        displayCart();
     }else{
         let getData = JSON.parse(localStorage.getItem("foodLS"));
         let check = true;
